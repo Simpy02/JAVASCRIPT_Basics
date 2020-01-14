@@ -69,3 +69,19 @@ function dateFormate(){
 
 return(day+" / "+mon+" / "+year); };console.log(dateFormate());
 
+Exercise 4 :Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7
+======
+
+Code:const readline=require('readline-sync');
+function areaTriangle(a,b,c) {
+  //area of triangle with 3 sides=square root of(s(s-a)(s-b)(s-c)) where s=(a+b+c)/2
+  var area;
+  var s=(a+b+c)/2;
+  return area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+
+
+
+}
+console.log(areaTriangle(5,6,7));
+=
+
