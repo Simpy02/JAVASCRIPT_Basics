@@ -32,6 +32,7 @@ console.log("Current Time: "+ hour + ampm + " : " +min+" : "+sec);
 =================================================================
 
 Exercise2:Write a JavaScript program to print the contents of the current window
+============
 Code
 <html lang="en" dir="ltr">
   <head>
@@ -54,13 +55,17 @@ Code
 
 =========================================================================
  Write a JavaScript program to get the current date.
+ ============
 code:
 const readline=require('readline-sync');
 function dateFormate(){
-var date=new Date();
-var year=date.getFullYear();
-var mon=(1+date.getMonth()).toString().padStart(2,'0');
-var day=date.getDate();
+   var date=new Date();
+    var year=date.getFullYear();
+    var mon=(1+date.getMonth()).toString().padStart(2,'0');
+     var day=date.getDate();
+     day=day>=10? day.toString().padStart(2,'0'):day;
 
-return(day+" / "+mon+" / "+year);
-};console.log(dateFormate());
+
+
+return(day+" / "+mon+" / "+year); };console.log(dateFormate());
+
