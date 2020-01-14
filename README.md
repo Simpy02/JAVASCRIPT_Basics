@@ -29,3 +29,27 @@ if(hour===0 && min==='PM'){
 
 console.log("Today is:"+daylist[day]);
 console.log("Current Time: "+ hour + ampm + " : " +min+" : "+sec);
+=================================================================
+
+Exercise2:Write a JavaScript program to print the contents of the current window
+Code
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Print the content of current page</title>
+    <script type="text/javascript">
+      function printContent(){
+        window.print();
+      }
+      
+      
+    </script>
+  </head>
+  <body>
+    <h1>This is a Practice page</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <button type="button" name="button" onclick="printContent()">Print this page</button>
+  </body>
+</html>
+
+=========================================================================
