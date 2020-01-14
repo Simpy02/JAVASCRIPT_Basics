@@ -53,3 +53,14 @@ Code
 </html>
 
 =========================================================================
+ Write a JavaScript program to get the current date.
+code:
+const readline=require('readline-sync');
+function dateFormate(){
+var date=new Date();
+var year=date.getFullYear();
+var mon=(1+date.getMonth()).toString().padStart(2,'0');
+var day=date.getDate();
+
+return(day+" / "+mon+" / "+year);
+};console.log(dateFormate());
